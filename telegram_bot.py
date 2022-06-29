@@ -91,7 +91,6 @@ class WTelegramBot:
                 continue
             result_text += result.build_result()
 
-
         # result_text += '*' * 1000
         l = len(result_text)
         if l > 4096:

@@ -1,4 +1,3 @@
-import sys
 import time
 
 import log
@@ -8,7 +7,6 @@ from logs import Logs, Type
 
 if __name__ == '__main__':
 
-    # if 'log_control' in sys.argv:
     log.Logger('Wildberries_TelegramBot')
     log.Logger.start()
 

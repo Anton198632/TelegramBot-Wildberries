@@ -2,8 +2,8 @@
 
 class Settings:
     def __init__(self):
-        self.__TOKEN = ''
-        self.__BOT_NAME = ''
+        self.__TOKEN = 'ТОКЕН БОТА'
+        self.__BOT_NAME = 'НАЗВАНИЕ БОТА'
 
     def get_token(self):
         return self.__TOKEN

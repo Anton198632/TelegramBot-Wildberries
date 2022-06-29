@@ -23,12 +23,8 @@ async def async_main(id):
     for future in asyncio.as_completed(tasks):
         parts.append(await future)
 
-
     with open('result.txt', 'a') as text_file:
         text_file.write('{}\n'.format('\n'.join(parts)))
-
-
-
 
 
 if __name__ == '__main__':
@@ -37,7 +33,3 @@ if __name__ == '__main__':
         print(i)
         event_loop = asyncio.get_event_loop()
         event_loop.run_until_complete(async_main(i))
-
-
-
-    i = 0
